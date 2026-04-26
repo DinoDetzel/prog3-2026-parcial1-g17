@@ -1,24 +1,30 @@
-/* Estructura */
+
 @import url('components/fondo.css');
 @import url('components/navegacion.css');
 @import url('components/botones.css');
 @import url('components/tarjeta-horizontal.css');
+@import url('components/pie-pagina.css');
 
-/* Reset y Layout principal */
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
-/* Contenedor del semáforo para el fondo */
-.contenedor-principal {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro traslúcido  */
-    padding: 3rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px); /*desenfoque del semáforo */
+/* Luces */
+.activa-rojo { 
+    background-color: #ff0000 !important; 
+    box-shadow: 0 0 35px 5px rgba(255, 0, 0, 0.7); 
+}
+.activa-amarillo { 
+    background-color: #ffff00 !important; 
+    box-shadow: 0 0 35px 5px rgba(255, 255, 0, 0.7); 
+}
+.activa-verde { 
+    background-color: #00ff00 !important; 
+    box-shadow: 0 0 35px 5px rgba(0, 255, 0, 0.7); 
 }
