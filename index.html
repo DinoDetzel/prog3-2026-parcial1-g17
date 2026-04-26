@@ -2,25 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Semáforo - Programación III</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Semáforo - Grupo 17</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="fondo-pagina"></div>
+    <div class="fondo-pantalla"></div>
 
     <header class="encabezado">
-        <h2>PROGRAMACIÓN III - GRUPO 17</h2>
+        <h2>PROGRAMACIÓN III | Parcial 1 | Grupo 17</h2>
     </header>
 
     <main class="contenedor-principal">
-        <div class="tarjeta-horizontal">
-            <h1>Simulador de Semáforo</h1>
-        </div>
+        <section class="tarjeta-horizontal">
+            
+            <div class="semaforo">
+                <div id="rojo" class="luz"></div>
+                <div id="amarillo" class="luz"></div>
+                <div id="verde" class="luz"></div>
+            </div>
+
+            <div class="controles">
+                <div class="grupo-control">
+                    <h3>Modo Manual</h3>
+                    <button class="boton boton-rojo" onclick="controlManual('rojo')">Cambiar a Rojo</button>
+                    <button class="boton boton-amarillo" onclick="controlManual('amarillo')">Cambiar a Amarillo</button>
+                    <button class="boton boton-verde" onclick="controlManual('verde')">Cambiar a Verde</button>
+                </div>
+
+                <div class="grupo-control">
+                    <h3>Modo Automático</h3>
+                    <button id="btnIniciar" class="boton boton-accion">▶ INICIAR Automático</button>
+                    <button id="btnDetener" class="boton boton-accion">■ DETENER Automático</button>
+                </div>
+                <p id="texto-estado" class="estado-info">MODO: Esperando...</p>
+            </div>
+
+        </section>
     </main>
 
-<footer class="pie-pagina">
-    <p><span class="resaltado">Grupo 17</span> © 2026 - Programación III | Universidad Tecnológica Nacional</p>
-</footer>
+    <footer class="pie-pagina">
+        <p>© 2026 Universidad Tecnológica Nacional | TUP - Programación III | <strong>Grupo 17 - Parcial 1</strong></p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
