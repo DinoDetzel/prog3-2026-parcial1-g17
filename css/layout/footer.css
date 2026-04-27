@@ -1,0 +1,8 @@
+.pie-pagina {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+}

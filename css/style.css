@@ -1,0 +1,39 @@
+@import url("./layout/background.css");
+@import url("./layout/encabezado.css");
+@import url("./layout/footer.css");
+@import url("./components/button.css");
+@import url("./components/card-horizontal.css");
+@import url("./components/semaforo.css");
+@import url("./components/controles.css");
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Luces */
+.activa-rojo {
+    background-color: #ff0000 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 0, 0, 0.7);
+}
+
+.activa-amarillo {
+    background-color: #ffff00 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 255, 0, 0.7);
+}
+
+.activa-verde {
+    background-color: #00ff00 !important;
+    box-shadow: 0 0 35px 5px rgba(0, 255, 0, 0.7);
+}

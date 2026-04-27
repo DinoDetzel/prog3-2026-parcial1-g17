@@ -1,0 +1,10 @@
+.tarjeta-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: rgba(40, 40, 40, 0.75);
+    padding: 40px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
