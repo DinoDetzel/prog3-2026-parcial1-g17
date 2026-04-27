@@ -1,6 +1,12 @@
-let intervalo;
+let intervalo = null;
 let posicion = 0;
-const colores = ['rojo', 'amarillo', 'verde'];
+const colores = ['rojo', 'verde', 'amarillo'];
+
+const tiempos = {
+    rojo: 7000,
+    verde: 6000,
+    amarillo: 1500
+};
 
 // cambia luces
 function cambiarColor(color) {
@@ -19,22 +25,37 @@ function cambiarColor(color) {
 function iniciarAutomatico() {
     detenerAutomatico();
 
-    intervalo = setInterval(() => {
-        cambiarColor(colores[posicion]);
+    posicion = 0; // arranca siempre desde rojo
 
-        posicion++;
-        if (posicion === colores.length) {
-            posicion = 0;
-        }
+    function ciclo() {
+        const colorActual = colores[posicion];
+
+        cambiarColor(colorActual);
 
         document.getElementById("texto-estado").textContent = "MODO: Automatico";
 
-    }, 1000);
+        intervalo = setTimeout(() => {
+
+            posicion++;
+            if (posicion === colores.length) {
+                posicion = 0;
+            }
+
+            ciclo();
+
+        }, tiempos[colorActual]);
+    }
+
+    ciclo();
 }
 
 // detener
 function detenerAutomatico() {
-    clearInterval(intervalo);
+    if (intervalo) {
+        clearTimeout(intervalo); // corta el ciclo correctamente
+        intervalo = null;
+    }
+
     document.getElementById("texto-estado").textContent = "MODO: Detenido";
 }
 
