@@ -1,85 +1,56 @@
+@import url("./layout/background.css");
+@import url("./layout/encabezado.css");
+@import url("./layout/footer.css");
+@import url("./components/button.css");
+@import url("./components/card-horizontal.css");
+@import url("./components/semaforo.css");
+@import url("./components/controles.css");
+
 body {
+    margin: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 100vh;
-    background-color: #222;
+    font-family: Arial, sans-serif;
 }
 
-.fondo {
-    background-image: url('../assets/img/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.8);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.navbar {
-    margin-top: 5px;
-}
-
-.navbar a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/* bajar contenido */
-body {
-    padding-top: 100px;
-}
-
-.semaforo {
+.contenedor-principal {
+    margin-top: 10%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 260px;
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
 }
 
-.luz {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #444;
-    opacity: 0.3;
-    transition: 0.3s;
+/* Luces */
+.activa-rojo {
+    background-color: #ff0000 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 0, 0, 0.7);
 }
 
-/* ACTIVAS */
-.luz.roja.activa {
-    background-color: red;
-    opacity: 1;
+.activa-amarillo {
+    background-color: #ffff00 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 255, 0, 0.7);
 }
 
-.luz.amarilla.activa {
-    background-color: yellow;
-    opacity: 1;
+.activa-verde {
+    background-color: #00ff00 !important;
+    box-shadow: 0 0 35px 5px rgba(0, 255, 0, 0.7);
 }
 
-.luz.verde.activa {
-    background-color: green;
-    opacity: 1;
+
+@media (max-width: 768px) {
+
+
+    body {
+        font-size: 90%;
+    }
 }
 
-.botones button {
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
+@media (max-width: 480px) {
+
+
+    body {
+        font-size: 80%;
+        flex-wrap: wrap;
+    }
 }

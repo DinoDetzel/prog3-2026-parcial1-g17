@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Semáforo interactivo</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Semáforo</title>
+    <link rel="icon" href="./assets/favicon/semaforo-logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="fondo">
 
-    <header class="header">
-        <h1>Semáforo</h1>
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Info</a>
-        </nav>
+<body>
+    <div class="fondo-pantalla"></div>
+
+    <header class="encabezado">
+        <h2>Simulador de Semáforo</h2>
     </header>
-    
 
-    <div class="semaforo">
-    <div class="luz roja"></div>
-    <div class="luz amarilla"></div>
-    <div class="luz verde"></div>
-    </div>
+    <main class="contenedor-principal">
+        <div class="tarjeta-horizontal">
 
-    <div class="botones">
-    <button onclick="cambiarColor('rojo')">Rojo</button>
-    <button onclick="cambiarColor('amarillo')">Amarillo</button>
-    <button onclick="cambiarColor('verde')">Verde</button>
-    </div>
+            <div class="semaforo">
+                <div class="luz-contenedor">
+                    <div id="rojo" class="luz"></div>
+                    <span class="etiqueta">Rojo</span>
+                </div>
+                <div class="luz-contenedor">
+                    <div id="amarillo" class="luz"></div>
+                    <span class="etiqueta">Amarillo</span>
+                </div>
+                <div class="luz-contenedor">
+                    <div id="verde" class="luz"></div>
+                    <span class="etiqueta">Verde</span>
+                </div>
+            </div>
+
+            <div class="controles">
+                <h3>MODO MANUAL</h3>
+                <button class="boton btn-manual-rojo" onclick="controlManual('rojo')">Cambiar a Rojo</button>
+                <button class="boton btn-manual-amarillo" onclick="controlManual('amarillo')">Cambiar a
+                    Amarillo</button>
+                <button class="boton btn-manual-verde" onclick="controlManual('verde')">Cambiar a Verde</button>
+
+                <h3 class="espacio-arriba">MODO AUTOMÁTICO</h3>
+                <button id="btnIniciar" class="boton btn-auto">
+                    <span class="icono verde">▶</span> INICIAR Automático
+                </button>
+                <button id="btnDetener" class="boton btn-auto">
+                    <span class="icono rojo">■</span> DETENER Automático
+                </button>
+                <hr class="separador">
+                <p id="texto-estado" class="estado-info">MODO: Esperando...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 Universidad Tecnológica Nacional</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
