@@ -1,0 +1,50 @@
+.boton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background-color: #eee;
+    transform: translateY(-1px);
+}
+
+.btn-manual-rojo {
+    border: 2px solid #ff4d4d;
+}
+
+.btn-manual-amarillo {
+    border: 2px solid #ffda44;
+}
+
+.btn-manual-verde {
+    border: 2px solid #2ecc71;
+}
+
+.icono.verde {
+    color: #2ecc71;
+}
+
+.icono.rojo {
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px 15px;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 8px 12px;
+        font-size: 80%;
+    }
+}
