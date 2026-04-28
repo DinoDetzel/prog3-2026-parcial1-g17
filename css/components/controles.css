@@ -32,3 +32,17 @@
 .icono.rojo {
     color: #e74c3c;
 }
+
+@media (max-width: 768px) {
+    .control {
+        margin: 10px;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .control {
+        margin: 8px;
+        font-size: 80%;
+    }
+}

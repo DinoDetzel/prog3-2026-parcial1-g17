@@ -34,3 +34,17 @@
 .icono.rojo {
     color: #e74c3c;
 }
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px 15px;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 8px 12px;
+        font-size: 80%;
+    }
+}

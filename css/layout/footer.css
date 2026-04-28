@@ -6,3 +6,22 @@
     color: #ccc;
     font-size: 12px;
 }
+
+
+@media (max-width: 768px) {
+
+    .pie-pagina {
+        padding: 10px;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pie-pagina {
+        padding: 8px;
+        font-size: 80%;
+        position: relative;
+        padding-top: 40px;
+    }
+}

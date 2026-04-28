@@ -26,3 +26,20 @@
     font-size: 11px;
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+    .semaforo {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .semaforo {
+        width: 80%;
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 20px;
+    }
+}
