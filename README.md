@@ -98,12 +98,15 @@ git clone https://github.com/DinoDetzel/prog3-2026-parcial1-g17
     │   └── favicon/
     ├── css/
     │   ├── index.css
-    │   └── components/
-    │       ├── 
-    │       ├── 
-    │       ├── 
-    │       ├── 
-    │       └── 
+    │   ├── components/
+    │   |   ├── button.css
+    │   |   ├── card-horizontal.css
+    │   |   ├── controles.css 
+    │   |   └── semaforo.css
+    |   └── layout/
+    |       ├── background.css
+    |       ├── encabezado.css
+    |       └── footer.css
     ├── js/                    
     │   └── script.js                     
     └── README.md

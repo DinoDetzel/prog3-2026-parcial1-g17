@@ -1,13 +1,13 @@
-
-@import url('components/fondo.css');
-@import url('components/navegacion.css');
-@import url('components/botones.css');
-@import url('components/tarjeta-horizontal.css');
-@import url('components/pie-pagina.css');
+@import url("./layout/background.css");
+@import url("./layout/encabezado.css");
+@import url("./layout/footer.css");
+@import url("./components/button.css");
+@import url("./components/card-horizontal.css");
+@import url("./components/semaforo.css");
+@import url("./components/controles.css");
 
 body {
     margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,22 +15,42 @@ body {
 }
 
 .contenedor-principal {
-    height: 100vh;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Luces */
-.activa-rojo { 
-    background-color: #ff0000 !important; 
-    box-shadow: 0 0 35px 5px rgba(255, 0, 0, 0.7); 
+.activa-rojo {
+    background-color: #ff0000 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 0, 0, 0.7);
 }
-.activa-amarillo { 
-    background-color: #ffff00 !important; 
-    box-shadow: 0 0 35px 5px rgba(255, 255, 0, 0.7); 
+
+.activa-amarillo {
+    background-color: #ffff00 !important;
+    box-shadow: 0 0 35px 5px rgba(255, 255, 0, 0.7);
 }
-.activa-verde { 
-    background-color: #00ff00 !important; 
-    box-shadow: 0 0 35px 5px rgba(0, 255, 0, 0.7); 
+
+.activa-verde {
+    background-color: #00ff00 !important;
+    box-shadow: 0 0 35px 5px rgba(0, 255, 0, 0.7);
+}
+
+
+@media (max-width: 768px) {
+
+
+    body {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    body {
+        font-size: 80%;
+        flex-wrap: wrap;
+    }
 }
