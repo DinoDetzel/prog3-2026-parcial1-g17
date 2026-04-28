@@ -67,7 +67,7 @@ Se evita que existan múltiples ciclos activos al mismo tiempo.
 
 ---
 
-## Flujo de trabajo
+## Flujo de trabajo.
 
 Se utilizó una estructura de ramas basada en Git:
 
@@ -86,28 +86,30 @@ Finalmente, la versión final fue unificada en la rama `main`.
 git clone https://github.com/DinoDetzel/prog3-2026-parcial1-g17
 ```
 2. Abrir la carpeta del proyecto
-3. Ejecutar el archivo `index.html`
-(No requiere instalacion adicional)
+3. Ejecutar el archivo `index.html` (No requiere instalacion adicional)
 
 ---
 
 ## Estructura del Proyecto.
-    prog3-2026-parcial1-g17/  
-    │── index.html              
-    ├── assets/                 
-    │   ├── img/               
-    │   └── favicon/     
-    ├── css/                   
-    │   ├── index.css         
-    │   ├── style.css         
-    │   └── components/        
-    │       ├── button.css
-    │       ├── card-horizontal.css
-    │       ├── controles.css
-    │       ├── semaforo.css
+    prog3-2026-parcial1-g17/
+    │── index.html
+    ├── assets/
+    │   ├── img/
+    │   └── favicon/
+    ├── css/
+    │   ├── index.css
+    │   ├── components/
+    │   |   ├── button.css
+    │   |   ├── card-horizontal.css
+    │   |   ├── controles.css 
+    │   |   └── semaforo.css
+    |   └── layout/
+    |       ├── background.css
+    |       ├── encabezado.css
+    |       └── footer.css
     ├── js/                    
-    │   ├── script.js                          
-    └── README.md             
+    │   └── script.js                     
+    └── README.md
 
 ---
 

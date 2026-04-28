@@ -4,8 +4,8 @@ const colores = ['rojo', 'verde', 'amarillo'];
 
 const tiempos = {
     rojo: 7000,
-    verde: 6000,
-    amarillo: 1500
+    verde: 9000,
+    amarillo: 3000
 };
 
 // cambia luces
