@@ -6,13 +6,18 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    border: 4px solid #444;
     width: 120px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .luz {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    background-color: #111;
+    border: 3px solid #000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .luz-contenedor {
